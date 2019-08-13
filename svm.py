@@ -7,8 +7,8 @@ import pandas as pd
 
 print("starting to read...")
 data=pd.read_csv(r'C:\Users\lenovo\Desktop\test.csv')
-y=data['status']
-x=data.iloc[:,0:3]
+y=data['activity']
+x=data['image']
 
 print("analysing...")
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=0)
