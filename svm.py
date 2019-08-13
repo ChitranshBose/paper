@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 import pandas as pd
 
 print("starting to read...")
-data=pd.read_csv(r'C:\Users\lenovo\Desktop\shikhar_data.csv')
+data=pd.read_csv(r'C:\Users\lenovo\Desktop\test.csv')
 y=data['status']
 x=data.iloc[:,0:3]
 
