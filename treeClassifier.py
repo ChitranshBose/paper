@@ -12,8 +12,7 @@ data=pd.read_csv('C:\\out\\segmented_block_2.csv')
 y=data['class']
 x=data.iloc[:,0:50]
 
-#x=iris.data()
-#y=iris.target()
+
 
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2,random_state=0)
 tc=DecisionTreeClassifier()
